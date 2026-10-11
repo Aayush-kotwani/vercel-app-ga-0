@@ -41,6 +41,7 @@ def percentile(values, q=0.95):
 
 @app.post("/")
 async def calculate_metrics(payload: MetricsRequest):
+    # Keep your existing function body here
     results = {}
 
     for region in payload.regions:
